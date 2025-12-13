@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "creating start.sh ..."
-cd /
+cd ~
 touch start.sh
 
 cat << 'EOF' > start.sh
