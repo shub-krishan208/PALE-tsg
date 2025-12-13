@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Layout from "./components/Admin/Layout.jsx";
 import LogsHistory from "./pages/LogHistory.jsx";
 import { Navigate } from "react-router-dom";
+import QrCodeGen from "./pages/QrCode.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -15,6 +16,8 @@ function App() {
         <Routes>
           {/* Public Route */}
           <Route path="/" element={<Home />} />
+
+          <Route path="/qrcode" element={<QrCodeGen />} />
           <Route path="/checkin" element={<Checkin />} />
           {/* Admin Layout Routes */}
           <Route path="/dashboard" element={<Layout />}>
